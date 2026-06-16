@@ -1,5 +1,30 @@
+import { useState, useEffect } from 'react';
+
 export default function Navbar() {
-  const navLinks = ['Home', 'About', 'Projects', 'Contact'];
+  const navLinks = ['Home', 'About', 'Skills', 'Projects', 'Contact'];
+  const [activeLink, setActiveLink] = useState('Home');
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.id;
+            const capitalizedId = id.charAt(0).toUpperCase() + id.slice(1);
+            setActiveLink(capitalizedId);
+          }
+        });
+      },
+      { threshold: 0.5 } 
+    );
+
+    navLinks.forEach((link) => {
+      const section = document.getElementById(link.toLowerCase());
+      if (section) observer.observe(section);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <header className="sticky top-0 z-50 w-full bg-[#09090b]/90 backdrop-blur-md">
@@ -12,8 +37,9 @@ export default function Navbar() {
           <a
             key={link}
             href={`#${link.toLowerCase()}`}
-            className={`px-4 py-1 rounded-full text-sm font-medium transition ${
-              link === 'Home' 
+            onClick={() => setActiveLink(link)} 
+            className={`px-4 py-1 rounded-full text-sm font-medium transition-all duration-300 ${
+              activeLink === link 
                 ? 'text-white bg-zinc-800' 
                 : 'text-zinc-400 hover:text-white'
             }`}
