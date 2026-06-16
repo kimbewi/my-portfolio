@@ -2,11 +2,11 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Full-Stack Dev",
-      skills: ["ReactJS", "ExpressJS", "Node.js", "Flutter", "Tailwind CSS", "VueJS", "MongoDB", "Firebase", "MySQL", "WebSockets", "Plotly", "Seaborn & Matplotlib"]
+      skills: ["ReactJS",  "Node.js", "Vue.js", "Flutter", "Tailwind CSS", "MongoDB", "Firebase", "MySQL", "WebSockets", "Plotly", "Seaborn & Matplotlib"]
     },
     {
       title: "Hardware & IoT",
-      skills: ["Raspberry Pi", "ESP32", "Sensor Integration", "Microcontrollers", "WebRTC"]
+      skills: ["Raspberry Pi", "ESP32", "Arduino","Sensor Integration", "Microcontrollers", "WebRTC"]
     },
     {
       title: "AI & Machine Learning",
@@ -19,7 +19,7 @@ export default function Skills() {
   ];
 
   return (
-    <section id="skills" className="max-w-7xl mx-auto px-6 sm:px-12 py-24 text-white">
+    <section id="skills" className="max-w-7xl mx-auto px-6 sm:px-12 py-30 text-white">
       <div className="flex flex-col items-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-2 pb-10">Skills</h2>
 
