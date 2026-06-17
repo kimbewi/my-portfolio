@@ -1,4 +1,8 @@
+import { useState } from 'react';
+
 export default function Projects() {
+  const [showAll, setShowAll] = useState(false);
+
   const projects = [
     {
       id: 1,
@@ -14,16 +18,20 @@ export default function Projects() {
       title: "ClimaCast: Greenhouse Climate Control and Monitoring System",
       description: "An IoT-based application designed to manage greenhouse climate control and monitoring.",
       tech: ["HTML", "CSS", "JavaScript", "ESP32"],
-      link: "#",
+      link: "https://climacast-project.vercel.app/",
+      image: "/climacast.png",
     },
     {
       id: 3,
       title: "DashED: DepEd Enrollment Data Dashboard",
       description: "An interactive data visualization dashboard for enrollment data, presenting key metrics through graphs and charts to support easier analysis and interpretation.",
       tech: ["Flask", "Dash", "Seaborn & Matplotlib", "Plotly"],
-      link: "#",
-    }
+      link: "https://dashed-project.vercel.app/",
+      image: "/dashed.png",
+    },
   ];
+
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
 
   return (
     <section id="projects" className="max-w-7xl mx-auto px-6 sm:px-12 pb-24 text-white scroll-mt-24">
@@ -33,13 +41,25 @@ export default function Projects() {
           <p className="text-zinc-400 font-medium tracking-widest text-sm uppercase mb-2">My Projects</p>
           <h2 className="text-3xl md:text-4xl font-bold">Featured Projects</h2>
         </div>
-        <button className="px-6 py-2 border border-zinc-700 hover:bg-zinc-800 text-sm font-medium rounded-lg text-zinc-300 hover:text-white transition-colors cursor-pointer">
-          View All Projects
+        
+        <button 
+          onClick={() => setShowAll(!showAll)}
+          className="px-6 py-2 border border-zinc-700 hover:bg-zinc-800 text-sm font-medium rounded-lg text-zinc-300 hover:text-white transition-colors cursor-pointer inline-flex items-center gap-2"
+        >
+          {showAll ? "Show Less" : "View All Projects"}
+          <svg 
+            className={`w-4 h-4 transition-transform duration-300 ${showAll ? "rotate-180" : "rotate-0"}`} 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+          </svg>
         </button>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project) => (
+        {displayedProjects.map((project) => (
           <div 
             key={project.id} 
             className="bg-[#121214] border border-zinc-800 rounded-2xl overflow-hidden flex flex-col group hover:border-zinc-600 transition-colors duration-300"
