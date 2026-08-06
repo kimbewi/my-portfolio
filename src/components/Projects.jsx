@@ -23,6 +23,14 @@ export default function Projects() {
     },
     {
       id: 3,
+      title: "Karakuki",
+      description: "Turn any screen into a collaborative karaoke stage. Karakuki is a seamless, zero-install party system where a main display hosts the room and guests connect instantly via QR code to act as smart remotes.",
+      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
+      link: "https://karakuki.vercel.app/",
+      image: "/karakuki.png",
+    },
+    {
+      id: 4,
       title: "DashED: DepEd Enrollment Data Dashboard",
       description: "An interactive data visualization dashboard for enrollment data, presenting key metrics through graphs and charts to support easier analysis and interpretation.",
       tech: ["Flask", "Dash", "Seaborn & Matplotlib", "Plotly"],
