@@ -2,7 +2,7 @@ export default function Skills() {
   const skillCategories = [
     {
       title: "Full-Stack Dev",
-      skills: ["ReactJS",  "Node.js", "Vue.js", "Flutter", "Tailwind CSS", "MongoDB", "Firebase", "MySQL", "WebSockets", "Plotly", "Seaborn & Matplotlib"]
+      skills: ["Next.js", "ReactJS", "Node.js", "Vue.js", "Flutter", "Tailwind CSS", "Supabase", "MongoDB", "Firebase", "MySQL", "WebSockets", "Plotly", "Seaborn & Matplotlib"]
     },
     {
       title: "Hardware & IoT",
