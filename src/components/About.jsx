@@ -1,7 +1,7 @@
 export default function About() {
   const achievements = [
     { id: '01', title: "Candidate for Latin Honor" },
-    { id: '02', title: "Consistent President's Lister" },
+    { id: '02', title: "Civil Service Commission - Honor Graduate Eligible" },
     { id: '03', title: "Consistent Departmental Topnotcher" },
     { id: '04', title: "PUP Alumni Association - USA Scholar" },
   ];
