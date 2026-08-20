@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 export default function Projects() {
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(true);
 
   const projects = [
     {
@@ -15,6 +15,30 @@ export default function Projects() {
     },
     {
       id: 2,
+      title: "MeterMate: Automated Submeter Billing System",
+      description: "An automated submeter management and billing system that helps landlords track tenants’ electricity consumption, calculate bills, automatically parse utility billing emails, and deliver finalized bills directly to tenants.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase", "Google Apps Script"],
+      link: "https://metermate-app.vercel.app/",
+      image: "/metermate.png",
+    },
+    {
+      id: 3,
+      title: "Karakuki: AI-Powered Karaoke Platform",
+      description: "Turn any screen into an AI-powered karaoke stage. Guests connect via QR code to control the experience from their phones, with KukAI, an LLM-powered chat assistant, recommending songs through natural-language conversations and letting users add their picks directly to the queue.",
+      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "LLM", "Prompt Engineering"],
+      link: "https://karakuki.vercel.app/",
+      image: "/karakukiv2.png",
+    },
+    {
+      id: 4,
+      title: "Print Workflow Automation System",
+      description: "An AI-powered workflow automation system that transforms customer emails into structured printing orders. Using an LLM, it extracts order details, identifies missing information, manages file attachments, updates order records, and automates customer communication.",
+      tech: ["Make", "LLM API", "Gmail", "Google Sheets", "Google Drive", "Prompt Engineering"],
+      link: "",
+      image: "/print_workflowv2.png",
+    },
+    {
+      id: 5,
       title: "ClimaCast: Greenhouse Climate Control and Monitoring System",
       description: "An IoT-based application designed to manage greenhouse climate control and monitoring.",
       tech: ["HTML", "CSS", "JavaScript", "ESP32"],
@@ -22,15 +46,7 @@ export default function Projects() {
       image: "/climacast.png",
     },
     {
-      id: 3,
-      title: "Karakuki",
-      description: "Turn any screen into a collaborative karaoke stage. Karakuki is a seamless, zero-install party system where a main display hosts the room and guests connect instantly via QR code to act as smart remotes.",
-      tech: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS"],
-      link: "https://karakuki.vercel.app/",
-      image: "/karakuki.png",
-    },
-    {
-      id: 4,
+      id: 6,
       title: "DashED: DepEd Enrollment Data Dashboard",
       description: "An interactive data visualization dashboard for enrollment data, presenting key metrics through graphs and charts to support easier analysis and interpretation.",
       tech: ["Flask", "Dash", "Seaborn & Matplotlib", "Plotly"],

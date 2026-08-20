@@ -1,16 +1,16 @@
 export default function Skills() {
   const skillCategories = [
     {
-      title: "Full-Stack Dev",
-      skills: ["Next.js", "ReactJS", "Node.js", "Vue.js", "Flutter", "Tailwind CSS", "Supabase", "MongoDB", "Firebase", "MySQL", "WebSockets", "Plotly", "Seaborn & Matplotlib"]
+      title: "AI & Automation",
+      skills: ["LLM Integration", "Prompt Engineering", "Workflow Automation", "Make", "Google Apps Script", "API Integration"]
     },
     {
-      title: "Hardware & IoT",
-      skills: ["Raspberry Pi", "ESP32", "Arduino","Sensor Integration", "Microcontrollers", "WebRTC"]
+      title: "Full-Stack Development",
+      skills: ["Next.js", "React", "Vue.js", "Node.js","TypeScript", "Flutter", "Tailwind CSS", "Supabase", "MongoDB", "Firebase", "MySQL", "WebSockets", "WebRTC", "Plotly", "Seaborn & Matplotlib"]
     },
     {
       title: "AI & Machine Learning",
-      skills: ["Computer Vision", "YOLO", "EfficientNet (CNN)", "Python", "TensorFlow"]
+      skills: ["Python", "Computer Vision", "YOLO", "EfficientNet (CNN)", "TensorFlow"]
     },
     {
       title: "Cloud & Infrastructure",

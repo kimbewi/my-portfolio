@@ -1,28 +1,9 @@
 export default function About() {
   const achievements = [
     { id: '01', title: "Candidate for Latin Honor" },
-    { id: '02', title: "Civil Service Commission - Honor Graduate Eligible" },
-    { id: '03', title: "Consistent Departmental Topnotcher" },
-    { id: '04', title: "PUP Alumni Association - USA Scholar" },
-  ];
-
-  const skillCategories = [
-    {
-      title: "Full-Stack Dev",
-      skills: ["ReactJS", "ExpressJS", "Node.js", "Flutter", "Tailwind CSS"]
-    },
-    {
-      title: "Hardware & IoT",
-      skills: ["Raspberry Pi", "ESP32", "Sensor Integration", "Microcontrollers"]
-    },
-    {
-      title: "AI & Machine Learning",
-      skills: ["Computer Vision", "YOLO", "EfficientNet", "Python", "TFLite"]
-    },
-    {
-      title: "Design & Infrastructure",
-      skills: ["Figma", "UI/UX Layout", "WebRTC", "Tailscale", "Git"]
-    }
+    { id: '02', title: "CSC - Honor Graduate Eligible" },
+    { id: '03', title: "Data Engineering Pilipinas Scholar" },
+    { id: '04', title: "Consistent Departmental Topnotcher" },
   ];
 
   return (
@@ -30,12 +11,12 @@ export default function About() {
       
       <div className="flex flex-col items-center text-center mb-20">
         <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
-        <p className="text-zinc-400 max-w-3xl text-lg leading-relaxed">
-          I am Kimberly Isip, a Computer Engineering graduate interested in software development, cloud computing, IoT and data analytics. Through academic projects, I’ve built applications, worked with databases, and developed cloud and IoT-based solutions to real-world problems.
+        <p className="text-zinc-400 max-w-3xl text-base leading-relaxed">
+          I am <span className="text-white uppercase tracking-widest text-sm mx-1">Kimberly Isip</span>, a Computer Engineering graduate focused on AI, automation, and software development. I build practical applications that integrate LLMs, workflow automation, cloud technologies, and modern web development to solve real-world problems. My projects span AI-powered applications, automated business workflows, full-stack systems, and IoT solutions.
         </p>
       </div>
 
-      <div className="mb-32">
+      <div className="w-full">
         <h3 className="text-xl font-semibold text-center mb-8">Academic Excellence</h3>
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">

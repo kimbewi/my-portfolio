@@ -10,11 +10,11 @@ export default function Hero() {
         
         <h2 className="text-lg md:text-xl text-zinc-400 mb-3 max-w-md">
           <span className="font-bold text-zinc-100">Computer Engineering Graduate</span> |{' '}
-          <span className="font-bold text-zinc-100">Aspiring Cloud Engineer & Software Developer</span>
+          <span className="font-bold text-zinc-100">Aspiring AI & Automation Engineer</span>
         </h2>
         
         <p className="text-zinc-400 mb-10 max-w-md leading-relaxed text-base">
-          Passionate about building data-driven solutions and continuously learning emerging technologies. 
+          Passionate about building intelligent applications, automating real-world workflows, and exploring how AI can solve everyday problems. 
         </p>
         
         <div className="flex items-center gap-6">
