@@ -32,10 +32,10 @@ export default function Projects() {
     {
       id: 4,
       title: "Print Workflow Automation System",
-      description: "An AI-powered workflow automation system that transforms customer emails into structured printing orders. Using an LLM, it extracts order details, identifies missing information, manages file attachments, updates order records, and automates customer communication.",
-      tech: ["Make", "LLM API", "Gmail", "Google Sheets", "Google Drive", "Prompt Engineering"],
+      description: "An AI-powered printing business automation system that processes customer emails, uses LLMs to classify intent and extract structured order details, validates missing information, manages file attachments, stores orders and business knowledge, and automates customer responses and order-status notifications.",
+      tech: ["Make", "LLM API", "RAG", "Supabase", "Google Apps Script", "Gmail", "Google Sheets", "Google Drive", "Prompt Engineering"],
       link: "",
-      image: "/print_workflowv2.png",
+      image: "/print_workflowv3.png",
     },
     {
       id: 5,
